@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SRBluetoothSearchView">
+            <rect key="frame" x="0.0" y="0.0" width="288" height="226"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gvY-GF-J0C">
+                    <rect key="frame" x="0.0" y="0.0" width="288" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ds-Ie-bM0">
+                            <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="44" id="nLj-MP-2SX"/>
+                            </constraints>
+                            <state key="normal" image="bt_close_white">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="buttonClosePressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="nUR-Pi-YBg"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dkY-3L-o1g">
+                            <rect key="frame" x="244" y="0.0" width="44" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="44" id="IMV-b7-dS7"/>
+                            </constraints>
+                            <state key="normal" image="bt_ble_research">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="buttonResearchPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="Htq-WE-1HC"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="蓝牙" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lZU-4Y-Uln">
+                            <rect key="frame" x="44" y="0.0" width="200" height="44"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="lZU-4Y-Uln" secondAttribute="bottom" id="4hs-vx-Fpc"/>
+                        <constraint firstItem="dkY-3L-o1g" firstAttribute="leading" secondItem="lZU-4Y-Uln" secondAttribute="trailing" id="7bU-OW-lea"/>
+                        <constraint firstItem="7ds-Ie-bM0" firstAttribute="leading" secondItem="gvY-GF-J0C" secondAttribute="leading" id="8h1-Zg-zCq"/>
+                        <constraint firstAttribute="bottom" secondItem="7ds-Ie-bM0" secondAttribute="bottom" id="KKc-p2-ffN"/>
+                        <constraint firstItem="dkY-3L-o1g" firstAttribute="top" secondItem="gvY-GF-J0C" secondAttribute="top" id="O4E-nL-s7u"/>
+                        <constraint firstAttribute="bottom" secondItem="dkY-3L-o1g" secondAttribute="bottom" id="bPf-mM-wLR"/>
+                        <constraint firstAttribute="trailing" secondItem="dkY-3L-o1g" secondAttribute="trailing" id="cgf-t3-Ldb"/>
+                        <constraint firstItem="lZU-4Y-Uln" firstAttribute="leading" secondItem="7ds-Ie-bM0" secondAttribute="trailing" id="iEd-h0-RPo"/>
+                        <constraint firstItem="lZU-4Y-Uln" firstAttribute="top" secondItem="gvY-GF-J0C" secondAttribute="top" id="jE5-yg-Dmr"/>
+                        <constraint firstItem="7ds-Ie-bM0" firstAttribute="top" secondItem="gvY-GF-J0C" secondAttribute="top" id="nZo-3A-bR9"/>
+                        <constraint firstAttribute="height" constant="44" id="xx9-An-5Uu"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tTo-SX-dXz">
+                    <rect key="frame" x="108" y="99" width="73" height="73"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_ble_search_bg" translatesAutoresizingMaskIntoConstraints="NO" id="DaI-XS-bxl">
+                            <rect key="frame" x="0.0" y="0.0" width="73" height="73"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_ble_search_round" translatesAutoresizingMaskIntoConstraints="NO" id="b5u-VY-bsb">
+                            <rect key="frame" x="0.0" y="0.0" width="73" height="73"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="DaI-XS-bxl" firstAttribute="centerX" secondItem="b5u-VY-bsb" secondAttribute="centerX" id="GXt-jd-5xa"/>
+                        <constraint firstAttribute="height" constant="73" id="KJm-LM-qcE"/>
+                        <constraint firstItem="DaI-XS-bxl" firstAttribute="centerY" secondItem="b5u-VY-bsb" secondAttribute="centerY" id="TbB-ab-PAW"/>
+                        <constraint firstAttribute="centerX" secondItem="DaI-XS-bxl" secondAttribute="centerX" id="XdN-MM-vp8"/>
+                        <constraint firstAttribute="centerY" secondItem="DaI-XS-bxl" secondAttribute="centerY" id="unq-i6-8l2"/>
+                        <constraint firstAttribute="width" constant="73" id="vmh-3F-s5n"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="g4Y-s3-oRX">
+                    <rect key="frame" x="0.0" y="44" width="288" height="182"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="g4Y-s3-oRX" firstAttribute="top" secondItem="gvY-GF-J0C" secondAttribute="bottom" id="2z0-06-r3E"/>
+                <constraint firstItem="gvY-GF-J0C" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="5gR-z9-Hgf"/>
+                <constraint firstAttribute="centerX" secondItem="tTo-SX-dXz" secondAttribute="centerX" id="Dpw-hR-BLf"/>
+                <constraint firstAttribute="trailing" secondItem="gvY-GF-J0C" secondAttribute="trailing" id="RPC-xm-XxE"/>
+                <constraint firstItem="g4Y-s3-oRX" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="cmH-py-SHk"/>
+                <constraint firstAttribute="trailing" secondItem="g4Y-s3-oRX" secondAttribute="trailing" id="eh2-ap-g3e"/>
+                <constraint firstItem="gvY-GF-J0C" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="hV5-Mf-THf"/>
+                <constraint firstAttribute="bottom" secondItem="g4Y-s3-oRX" secondAttribute="bottom" id="n18-Ef-ecs"/>
+                <constraint firstAttribute="centerY" secondItem="tTo-SX-dXz" secondAttribute="centerY" constant="-22" id="nX7-aZ-Awh"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="bt_close" destination="7ds-Ie-bM0" id="ryE-w1-t9a"/>
+                <outlet property="bt_research" destination="dkY-3L-o1g" id="PuB-Cz-Eje"/>
+                <outlet property="ic_search" destination="b5u-VY-bsb" id="4Aq-gM-qxg"/>
+                <outlet property="ic_search_bg" destination="DaI-XS-bxl" id="8vT-lz-ecw"/>
+                <outlet property="lb_title" destination="lZU-4Y-Uln" id="v7B-I1-Ch3"/>
+                <outlet property="tableView" destination="g4Y-s3-oRX" id="tYQ-dz-6bz"/>
+                <outlet property="v_title" destination="gvY-GF-J0C" id="KE1-es-roq"/>
+            </connections>
+            <point key="canvasLocation" x="341" y="133"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bt_ble_research" width="15" height="16"/>
+        <image name="bt_close_white" width="12" height="12"/>
+        <image name="ic_ble_search_bg" width="73" height="73"/>
+        <image name="ic_ble_search_round" width="73" height="73"/>
+    </resources>
+</document>

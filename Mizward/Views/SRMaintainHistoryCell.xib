@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="70" id="sfX-LR-Amv" customClass="SRMaintainHistoryCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sfX-LR-Amv" id="MKq-8v-jta">
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="保养里程    100km" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gvc-cm-WUj" userLabel="lb_title">
+                        <rect key="frame" x="58" y="16" width="254" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="2015-05-06" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eEV-GE-yc0" userLabel="lb_time">
+                        <rect key="frame" x="58" y="39" width="80" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="mon-u7-RDu"/>
+                        </constraints>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="名字" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xu0-bR-wJE" userLabel="lb_store">
+                        <rect key="frame" x="148" y="39" width="164" height="15"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Gvc-cm-WUj" firstAttribute="leading" secondItem="eEV-GE-yc0" secondAttribute="leading" id="13o-kA-ePk"/>
+                    <constraint firstItem="Xu0-bR-wJE" firstAttribute="centerY" secondItem="eEV-GE-yc0" secondAttribute="centerY" id="5ts-nK-mUq"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Xu0-bR-wJE" secondAttribute="trailing" id="Ze5-4q-akl"/>
+                    <constraint firstAttribute="centerY" secondItem="Gvc-cm-WUj" secondAttribute="centerY" constant="10" id="alq-wk-hWn"/>
+                    <constraint firstItem="eEV-GE-yc0" firstAttribute="top" secondItem="Gvc-cm-WUj" secondAttribute="bottom" constant="5" id="hnI-dH-snB"/>
+                    <constraint firstItem="Gvc-cm-WUj" firstAttribute="leading" secondItem="MKq-8v-jta" secondAttribute="leadingMargin" constant="50" id="kaq-EE-gmz"/>
+                    <constraint firstItem="Xu0-bR-wJE" firstAttribute="leading" secondItem="eEV-GE-yc0" secondAttribute="trailing" constant="10" id="o2c-1f-gYf"/>
+                    <constraint firstItem="Gvc-cm-WUj" firstAttribute="trailing" secondItem="MKq-8v-jta" secondAttribute="trailingMargin" id="pZq-Zt-GaS"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="lb_store" destination="Xu0-bR-wJE" id="WsQ-Q3-wMa"/>
+                <outlet property="lb_time" destination="eEV-GE-yc0" id="oFj-iM-b6l"/>
+                <outlet property="lb_title" destination="Gvc-cm-WUj" id="XmL-DO-oWT"/>
+            </connections>
+            <point key="canvasLocation" x="222" y="341"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,161 @@
+/* 
+  Localizable.strings
+  SiRuiV4.0
+
+  Created by zhangjunbo on 15/6/15.
+  Copyright (c) 2015年 SiRui. All rights reserved.
+*/
+
+//导航栏 返回按钮
+"nav_back_main" = "首页";
+"nav_back" = "返回";
+//导航栏 title
+"nav_title_settings" = "设置";
+
+//设置
+"title_order_start" = "预约启动";
+"title_security_settings" = "账户安全";
+"title_vehicle_info" = "车辆资料";
+"title_terminal_info" = "终端资料";
+"title_terminal_manage" = "终端管理";
+"title_message_center" = "消息中心";
+"title_customer_service" = "在线客服";
+"title_about" = "关于我们";
+"title_logout" = "退出当前账号";
+"title_login_register" = "登录/注册";
+"title_login" = "登录";
+"title_register" = "注册";
+
+//咪智汇客服
+"description_customer_service" = "您好，很高兴为您服务，请问有什么可以帮您的吗？您也可以直接拨打我们的服务热线，欢迎您的致电(点击拨打热线)！";
+
+//注册
+"description_register" = "欢迎注册使用我们的咪智汇产品";
+"placeholder_phone" = "请输入您的手机号";
+"placeholder_authcode" = "请输入验证码";
+"placeholder_password" = "请设置密码";
+"descrition_register_protocol" = "点击注册按钮，代表您已经阅读并同意咪智汇协议";
+"bt_authcode" = "获取验证码";
+
+//终端管理
+"title_terminal_bind" = "添加车辆";
+"title_terminal_change_add" = "终端更换或添加";
+"description_terminal_bind" = "扫描设备二维码，生成新的车辆信息";
+"description_terminal_change_add" = "扫描设备二维码，更换故障终端，或加装新终端";
+
+//终端绑定
+"description_imei" = "扫描或输入密封注册袋中的终端号";
+"descrition_vehicle" = "请选择您的爱车品牌车型";
+"placeholder_imei" = "请填写您的终端号";
+"placeholder_vehicle" = "请选择您的车型";
+"bt_done" = "完成";
+"bt_cancel" = "取消";
+
+//预约启动
+"title_order_setting" = "预约设置";
+"string_go_home" = "回家";
+"string_go_office" = "上班";
+"string_order_default" = "请添加%@预约启动计划";
+"string_order_delete" = "是否删除该预约记录？";
+"string_start_length" = "启动%zd分钟";
+"string_length_5" = "5分钟";
+"string_length_10" = "10分钟";
+"string_length_15" = "15分钟";
+"%@ minute" = "%@分钟";
+"string_order_car" = "车辆";
+"string_order_repeat" = "重复";
+"string_order_length" = "启动时长";
+"string_order_no_repeat" = "不重复";
+"string_order_mon" = "周一 ";
+"string_order_tue" = "周二 ";
+"string_order_wed" = "周三 ";
+"string_order_thu" = "周四 ";
+"string_order_fri" = "周五 ";
+"string_order_sat" = "周六 ";
+"string_order_sun" = "周日 ";
+"string_order_start_alert" = "您预约在%@启动车辆%@，启动时长%@，当前车内温度%@，是否现在启动？";
+
+//安全设置
+"title_modify_phone" = "更改手机号";
+"title_modify_userName" = "更改用户名";
+"title_modify_password" = "更改密码";
+"title_authenticate" = "实名认证";
+"title_touchid" = "TouchID";
+"title_avoid_password" = "密码验证";
+"title_trip_hidden" = "轨迹管理";
+"title_obd" = "诊断设置";
+"title_bind" = "手机绑定";
+
+"description_avoid_password" = "关闭密码验证后，控制车辆将不再需要输入密码(仅限本机)，请谨慎操作！";
+"description_bind" = "绑定后智能控制和解除绑定功能将只能在本手机上运行。需本手机解除绑定后才能在其它手机上智能控制！";
+
+"alert_bind_others" = "该手机不能解绑，请用绑定的手机解绑";
+
+//轨迹管理
+"title_trip_open" = "行驶轨迹";
+"title_tripHidden" = "车牌号码：%@";
+"desctription_trip_open" = "开启轨迹后，可以在定位页面查询历史行驶记录";
+"desctription_trip_hidden" = "隐藏行踪将隐藏您的车辆位置并关闭行车轨迹功能，所有用户都只能看见您隐藏行踪之前的车辆位置。\n隐藏行踪后，只有开启隐藏的手机才能解除隐藏行踪。";
+
+//诊断设置
+"description_obd" = "诊断系统关闭后，您的爱车诊断功能会暂时不可用，轨迹会丢失，您可以手动开启或等待 12 小时后自动开启恢复正常使用。";
+
+//定位
+"title_location" = "定位";
+
+//轨迹
+"title_trip" = "轨迹";
+
+//轨迹详情
+"title_trip_detail" = "轨迹详情";
+
+//Alert
+"title_alert" = "提示";
+"description_forceUpdate" = "当前版本无法使用，请更新到最新版本";
+"description_update" = "检测到新版本，是否立即更新？";
+"bt_forceUpdate" = "立即更新";
+"bt_ignore" = "忽略";
+"bt_sure" = "确定";
+"bt_not_alert" = "不再提示";
+"bt_set_order_start" = "设置预约";
+
+//http
+"string_http_error" = "网络连接错误";
+"string_http_-1005" = "网络未连接";
+"string_http_-1001" = "连接超时";
+"string_http_5" = "用户名密码错误";
+
+//指令
+"string_Lock" = "上锁";
+"string_Unlock" = "解锁";
+"string_EngineOn" = "启动";
+"string_EngineOff" = "熄火";
+"string_OilOn" = "恢复";
+"string_OilBreak" = "断油";
+"string_Call" = "寻车";
+"string_Silence" = "";
+"string_WindowClose" = "升窗";
+"string_WindowOpen" = "降窗";
+"string_SkyClose" = "关天窗";
+"string_SkyOpen" = "开天窗";
+"string_GPSWeak" = "唤醒";
+"string_Defence" = "设防";
+"string_Undefence" = "撤防";
+"string_instruction_success" = "指令%@执行成功";
+"string_instruction_sms_success" = "指令%@已通过短信下发，请等待短信执行结果";
+"string_instruction_sms_fail" = "指令%@发送失败";
+
+//保养
+"maintain_common_big" = "大保养";
+"maintain_common_little" = "小保养";
+"maintain_engine_oil" = "机油";
+"maintain_engine_oil_filter" = "机油滤芯";
+"maintain_air_filter" = "空气滤芯";
+"maintain_air_condition_filter" = "空调滤芯";
+"maintain_tire" = "轮胎";
+"maintain_brake" = "刹车片";
+"maintain_battery" = "电瓶";
+"maintain_wiper" = "雨刮";
+
+//错误
+"error_no_ost" = "未安装OST";

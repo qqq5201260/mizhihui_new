@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SRRepeatTimePicker">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="165"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xHm-eY-GVQ">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                    <items>
+                        <barButtonItem systemItem="cancel" id="E7x-AP-E01">
+                            <connections>
+                                <action selector="cancelButtonPressed:" destination="iN0-l3-epB" id="3cw-3z-aQg"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="Ie6-mn-bd7"/>
+                        <barButtonItem systemItem="done" id="5yA-NE-7lI">
+                            <connections>
+                                <action selector="doneButtonPressed:" destination="iN0-l3-epB" id="3TU-vE-2W5"/>
+                            </connections>
+                        </barButtonItem>
+                    </items>
+                </toolbar>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="请选择重复时间" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6O1-LZ-55k">
+                    <rect key="frame" x="100" y="12" width="119" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yNW-G8-MkQ">
+                    <rect key="frame" x="20" y="66" width="55" height="30"/>
+                    <color key="backgroundColor" red="0.16470588235294117" green="0.37647058823529411" blue="0.50980392156862742" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="tos-YC-BE2"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="星期一">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="bWl-Uh-HyE"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m7a-Zr-kUl">
+                    <rect key="frame" x="95" y="66" width="55" height="30"/>
+                    <color key="backgroundColor" red="0.1647058824" green="0.37647058820000001" blue="0.50980392159999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="星期二">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="Xfd-OM-0z7"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qNK-yL-nsW">
+                    <rect key="frame" x="170" y="66" width="55" height="30"/>
+                    <color key="backgroundColor" red="0.1647058824" green="0.37647058820000001" blue="0.50980392159999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="星期三">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="Xgz-th-wpn"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="103" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h0i-Py-zlT">
+                    <rect key="frame" x="245" y="66" width="55" height="30"/>
+                    <color key="backgroundColor" red="0.1647058824" green="0.37647058820000001" blue="0.50980392159999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="星期四">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="Kv1-SP-Klh"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="104" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b83-1Q-0Yz">
+                    <rect key="frame" x="20" y="110" width="55" height="30"/>
+                    <color key="backgroundColor" red="0.1647058824" green="0.37647058820000001" blue="0.50980392159999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="星期五">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="Ixp-ja-oDU"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="105" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9dn-9h-ATX">
+                    <rect key="frame" x="95" y="110" width="55" height="30"/>
+                    <color key="backgroundColor" red="0.1647058824" green="0.37647058820000001" blue="0.50980392159999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="星期六">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="JZE-2k-xIh"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="106" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mkw-4L-lDB">
+                    <rect key="frame" x="170" y="110" width="55" height="30"/>
+                    <color key="backgroundColor" red="0.1647058824" green="0.37647058820000001" blue="0.50980392159999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="星期日">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="MtM-B5-n43"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="mkw-4L-lDB" firstAttribute="width" secondItem="b83-1Q-0Yz" secondAttribute="width" id="0Ki-FF-pwR"/>
+                <constraint firstItem="m7a-Zr-kUl" firstAttribute="centerY" secondItem="qNK-yL-nsW" secondAttribute="centerY" id="2km-6V-aJH"/>
+                <constraint firstItem="m7a-Zr-kUl" firstAttribute="centerY" secondItem="yNW-G8-MkQ" secondAttribute="centerY" id="5Nh-Ho-EeQ"/>
+                <constraint firstItem="yNW-G8-MkQ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="79r-ha-XSI"/>
+                <constraint firstItem="mkw-4L-lDB" firstAttribute="height" secondItem="b83-1Q-0Yz" secondAttribute="height" id="7ir-ex-OMd"/>
+                <constraint firstItem="mkw-4L-lDB" firstAttribute="height" secondItem="yNW-G8-MkQ" secondAttribute="height" id="CA6-u1-I6s"/>
+                <constraint firstItem="mkw-4L-lDB" firstAttribute="height" secondItem="9dn-9h-ATX" secondAttribute="height" id="DHM-Tj-K7C"/>
+                <constraint firstItem="mkw-4L-lDB" firstAttribute="width" secondItem="qNK-yL-nsW" secondAttribute="width" id="Edo-7D-dDH"/>
+                <constraint firstAttribute="trailing" secondItem="xHm-eY-GVQ" secondAttribute="trailing" id="Eh4-80-0vF"/>
+                <constraint firstItem="mkw-4L-lDB" firstAttribute="width" secondItem="9dn-9h-ATX" secondAttribute="width" id="HMo-pF-i0O"/>
+                <constraint firstItem="9dn-9h-ATX" firstAttribute="centerY" secondItem="mkw-4L-lDB" secondAttribute="centerY" id="HS3-YL-cYa"/>
+                <constraint firstItem="mkw-4L-lDB" firstAttribute="height" secondItem="qNK-yL-nsW" secondAttribute="height" id="LDF-38-tYG"/>
+                <constraint firstItem="xHm-eY-GVQ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="MLT-rL-QrV"/>
+                <constraint firstItem="yNW-G8-MkQ" firstAttribute="top" secondItem="xHm-eY-GVQ" secondAttribute="bottom" constant="22" id="N9Z-eG-FMu"/>
+                <constraint firstItem="mkw-4L-lDB" firstAttribute="width" secondItem="h0i-Py-zlT" secondAttribute="width" id="TC1-At-sRY"/>
+                <constraint firstItem="h0i-Py-zlT" firstAttribute="leading" secondItem="qNK-yL-nsW" secondAttribute="trailing" constant="20" id="W48-uK-mUX"/>
+                <constraint firstItem="xHm-eY-GVQ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="WmJ-XV-k8D"/>
+                <constraint firstItem="b83-1Q-0Yz" firstAttribute="centerX" secondItem="yNW-G8-MkQ" secondAttribute="centerX" id="YCk-hB-Rb6"/>
+                <constraint firstAttribute="trailing" secondItem="h0i-Py-zlT" secondAttribute="trailing" constant="20" id="c8a-9G-V6o"/>
+                <constraint firstItem="9dn-9h-ATX" firstAttribute="centerX" secondItem="m7a-Zr-kUl" secondAttribute="centerX" id="dO5-QU-Wu8"/>
+                <constraint firstItem="mkw-4L-lDB" firstAttribute="width" secondItem="m7a-Zr-kUl" secondAttribute="width" id="dPi-nX-KLf"/>
+                <constraint firstItem="mkw-4L-lDB" firstAttribute="height" secondItem="m7a-Zr-kUl" secondAttribute="height" id="eqf-lP-6vA"/>
+                <constraint firstItem="9dn-9h-ATX" firstAttribute="centerY" secondItem="b83-1Q-0Yz" secondAttribute="centerY" id="fmm-Iy-5kT"/>
+                <constraint firstItem="xHm-eY-GVQ" firstAttribute="centerX" secondItem="6O1-LZ-55k" secondAttribute="centerX" constant="1" id="ie9-QQ-GQz"/>
+                <constraint firstItem="mkw-4L-lDB" firstAttribute="width" secondItem="yNW-G8-MkQ" secondAttribute="width" id="iqo-fF-xOu"/>
+                <constraint firstItem="qNK-yL-nsW" firstAttribute="leading" secondItem="m7a-Zr-kUl" secondAttribute="trailing" constant="20" id="jyV-Kz-X9r"/>
+                <constraint firstItem="b83-1Q-0Yz" firstAttribute="top" secondItem="yNW-G8-MkQ" secondAttribute="bottom" constant="14" id="pA0-eQ-BGn"/>
+                <constraint firstItem="qNK-yL-nsW" firstAttribute="centerX" secondItem="mkw-4L-lDB" secondAttribute="centerX" id="r31-84-6E9"/>
+                <constraint firstItem="h0i-Py-zlT" firstAttribute="centerY" secondItem="qNK-yL-nsW" secondAttribute="centerY" id="r4Z-0x-vxK"/>
+                <constraint firstItem="xHm-eY-GVQ" firstAttribute="centerY" secondItem="6O1-LZ-55k" secondAttribute="centerY" id="sHD-SM-5A2"/>
+                <constraint firstItem="m7a-Zr-kUl" firstAttribute="leading" secondItem="yNW-G8-MkQ" secondAttribute="trailing" constant="20" id="vSH-sT-2OW"/>
+                <constraint firstItem="mkw-4L-lDB" firstAttribute="height" secondItem="h0i-Py-zlT" secondAttribute="height" id="z8i-7Q-8Ra"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outletCollection property="buttons" destination="yNW-G8-MkQ" id="Uy4-dc-fZY"/>
+                <outletCollection property="buttons" destination="m7a-Zr-kUl" id="fXu-I5-r1U"/>
+                <outletCollection property="buttons" destination="qNK-yL-nsW" id="L8s-cq-Yff"/>
+                <outletCollection property="buttons" destination="h0i-Py-zlT" id="8Tt-dF-cZy"/>
+                <outletCollection property="buttons" destination="b83-1Q-0Yz" id="7iF-4E-IpR"/>
+                <outletCollection property="buttons" destination="9dn-9h-ATX" id="IyR-iE-6Zn"/>
+                <outletCollection property="buttons" destination="mkw-4L-lDB" id="5Lw-nG-JS8"/>
+            </connections>
+            <point key="canvasLocation" x="233" y="293.5"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,94 @@
+//
+//  Mizward-Prefix.pch
+//  Mizward
+//
+//  Created by zhangjunbo on 15/8/11.
+//  Copyright (c) 2015年 Mizward. All rights reserved.
+//
+
+#ifndef Mizward_Mizward_Prefix_pch
+#define Mizward_Mizward_Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#ifdef __OBJC__
+
+#define MAS_SHORTHAND
+#define MAS_SHORTHAND_GLOBALS
+#import <Masonry/Masonry.h>
+
+#import <FrameAccessor/FrameAccessor.h>
+
+#import <BlocksKit/BlocksKit.h>
+#import <BlocksKit/BlocksKit+UIKit.h>
+
+#import <ReactiveCocoa/ReactiveCocoa.h>
+
+#import "TalkingData.h"
+
+#import "SRMacros.h"
+#import "SRColor.h"
+#import "SREnum.h"
+#import "SRTypedef.h"
+
+#import "SRConfig.h"
+
+#import "NSObject+Additions.h"
+#import "NSString+Additions.h"
+#import "NSDate+Additions.h"
+#import "NSDictionary+Additions.h"
+#import "UIImage+Additions.h"
+#import "UIView+FDCollapsibleConstraints.h"
+#import "UIColor+Additions.h"
+#import "UIView+Additions.h"
+#import "UITextField+Shake.h"
+#import "UITableView+EmptyView.h"
+#import "UIButton+Additions.h"
+#import "NSData+Additions.h"
+
+#pragma mark -
+#pragma mark - DEBUG
+
+#import <CocoaLumberjack/CocoaLumberjack.h>
+#import "iConsole+Customer.h"
+static const DDLogLevel ddLogLevel = DDLogLevelAll;
+
+#if DEBUG
+
+#define SRLogError(frmt, ...)   do {                                        \
+DDLogError(frmt, ##__VA_ARGS__);        \
+[iConsole error_file:__FILE__ function:__PRETTY_FUNCTION__ line:__LINE__ format:frmt, ##__VA_ARGS__]; \
+} while(0)
+#define SRLogWarn(frmt, ...)    do {                                        \
+DDLogWarn(frmt, ##__VA_ARGS__);        \
+[iConsole warn_file:__FILE__ function:__PRETTY_FUNCTION__ line:__LINE__ format:frmt, ##__VA_ARGS__]; \
+} while(0)
+#define SRLogInfo(frmt, ...)   do {                                        \
+DDLogInfo(frmt, ##__VA_ARGS__);        \
+[iConsole info_file:__FILE__ function:__PRETTY_FUNCTION__ line:__LINE__ format:frmt, ##__VA_ARGS__]; \
+} while(0)
+#define SRLogDebug(frmt, ...)    do {                                        \
+DDLogDebug(frmt, ##__VA_ARGS__);        \
+[iConsole debug_file:__FILE__ function:__PRETTY_FUNCTION__ line:__LINE__ format:frmt, ##__VA_ARGS__]; \
+} while(0)
+#define SRLogVerbose(frmt, ...)    do {                                        \
+DDLogVerbose(frmt, ##__VA_ARGS__);        \
+[iConsole verbose_file:__FILE__ function:__PRETTY_FUNCTION__ line:__LINE__ format:frmt, ##__VA_ARGS__]; \
+} while(0)
+
+#else
+
+#define SRLogError(frmt, ...)
+#define SRLogWarn(frmt, ...)
+#define SRLogInfo(frmt, ...)
+#define SRLogDebug(frmt, ...)
+#define SRLogVerbose(frmt, ...)
+
+#endif // DEBUG
+
+
+
+#endif // __OBJC__
+
+#endif

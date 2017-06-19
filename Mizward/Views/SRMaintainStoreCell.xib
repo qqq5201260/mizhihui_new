@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="72" id="ozM-Q9-B98" customClass="SRMaintainStoreCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="72"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ozM-Q9-B98" id="f9b-V6-NaL">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="71"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="名字" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="249" translatesAutoresizingMaskIntoConstraints="NO" id="chn-uJ-tJ2" userLabel="lb_store">
+                        <rect key="frame" x="73" y="8" width="239" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="17" id="8Vd-sF-bCt"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_stroe_address" translatesAutoresizingMaskIntoConstraints="NO" id="zdY-Tv-e7S">
+                        <rect key="frame" x="73" y="32" width="7" height="10"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="7" id="qxb-QL-KXn"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="地址" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="182" translatesAutoresizingMaskIntoConstraints="NO" id="u9W-t4-aKa" userLabel="lb_address">
+                        <rect key="frame" x="85" y="30" width="170" height="14"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_store_phone" translatesAutoresizingMaskIntoConstraints="NO" id="R0W-RW-sKn">
+                        <rect key="frame" x="71" y="49" width="10" height="10"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="电话" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="182" translatesAutoresizingMaskIntoConstraints="NO" id="UoS-fS-ZbW" userLabel="lb_phone">
+                        <rect key="frame" x="85" y="47" width="170" height="14"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1255.5km" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="55" translatesAutoresizingMaskIntoConstraints="NO" id="FYQ-jJ-ohe" userLabel="lb_mileage">
+                        <rect key="frame" x="257" y="30" width="55" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="55" id="0IB-Sx-NIE"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="chn-uJ-tJ2" firstAttribute="leading" secondItem="f9b-V6-NaL" secondAttribute="leadingMargin" constant="65" id="4J2-PN-Dsp"/>
+                    <constraint firstItem="u9W-t4-aKa" firstAttribute="trailing" secondItem="UoS-fS-ZbW" secondAttribute="trailing" id="7II-OP-gYS"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="UoS-fS-ZbW" secondAttribute="bottom" constant="2" id="AXI-ik-A9E"/>
+                    <constraint firstItem="FYQ-jJ-ohe" firstAttribute="leading" secondItem="u9W-t4-aKa" secondAttribute="trailing" constant="2" id="Aj8-Jq-UCY"/>
+                    <constraint firstItem="u9W-t4-aKa" firstAttribute="leading" secondItem="zdY-Tv-e7S" secondAttribute="trailing" constant="5" id="ChM-NL-dyj"/>
+                    <constraint firstItem="FYQ-jJ-ohe" firstAttribute="trailing" secondItem="f9b-V6-NaL" secondAttribute="trailingMargin" id="ES6-WE-hEs"/>
+                    <constraint firstItem="zdY-Tv-e7S" firstAttribute="top" secondItem="u9W-t4-aKa" secondAttribute="top" constant="2" id="Iin-pk-bal"/>
+                    <constraint firstItem="chn-uJ-tJ2" firstAttribute="top" secondItem="f9b-V6-NaL" secondAttribute="topMargin" id="OPo-ce-HOo"/>
+                    <constraint firstItem="u9W-t4-aKa" firstAttribute="centerY" secondItem="FYQ-jJ-ohe" secondAttribute="centerY" id="X3p-0u-LhQ"/>
+                    <constraint firstItem="u9W-t4-aKa" firstAttribute="leading" secondItem="UoS-fS-ZbW" secondAttribute="leading" id="fJ9-vO-HhN"/>
+                    <constraint firstItem="UoS-fS-ZbW" firstAttribute="top" secondItem="u9W-t4-aKa" secondAttribute="bottom" constant="3" id="fa2-mG-P2G"/>
+                    <constraint firstItem="R0W-RW-sKn" firstAttribute="centerX" secondItem="zdY-Tv-e7S" secondAttribute="centerX" id="rPY-eU-5Ff"/>
+                    <constraint firstItem="chn-uJ-tJ2" firstAttribute="trailing" secondItem="f9b-V6-NaL" secondAttribute="trailingMargin" id="riQ-pe-P1U"/>
+                    <constraint firstItem="u9W-t4-aKa" firstAttribute="top" secondItem="chn-uJ-tJ2" secondAttribute="bottom" constant="5" id="sOK-jj-7FJ"/>
+                    <constraint firstItem="zdY-Tv-e7S" firstAttribute="leading" secondItem="chn-uJ-tJ2" secondAttribute="leading" id="wme-KN-pZ0"/>
+                    <constraint firstItem="R0W-RW-sKn" firstAttribute="top" secondItem="UoS-fS-ZbW" secondAttribute="top" constant="2" id="zxO-fB-MmW"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="lb_address" destination="u9W-t4-aKa" id="5OV-n9-h0Q"/>
+                <outlet property="lb_mileage" destination="FYQ-jJ-ohe" id="xIR-Fb-xDH"/>
+                <outlet property="lb_phone" destination="UoS-fS-ZbW" id="eXJ-Cx-3jc"/>
+                <outlet property="lb_store" destination="chn-uJ-tJ2" id="OMr-4P-8pv"/>
+            </connections>
+            <point key="canvasLocation" x="275" y="280"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_store_phone" width="10" height="10"/>
+        <image name="ic_stroe_address" width="7" height="10"/>
+    </resources>
+</document>

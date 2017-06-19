@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SRWelcomePage2">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_welcome_page3_1" translatesAutoresizingMaskIntoConstraints="NO" id="CO2-fc-nTu">
+                    <rect key="frame" x="203" y="121" width="44" height="59"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_welcome_page3_2" translatesAutoresizingMaskIntoConstraints="NO" id="roR-YE-hcA">
+                    <rect key="frame" x="243" y="188" width="44" height="60"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_welcome_page3_6" translatesAutoresizingMaskIntoConstraints="NO" id="6dP-E8-jq4">
+                    <rect key="frame" x="78" y="113" width="44" height="58"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_welcome_page3_3" translatesAutoresizingMaskIntoConstraints="NO" id="Q4b-kZ-iXs">
+                    <rect key="frame" x="214" y="250" width="44" height="58"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_welcome_page3_4" translatesAutoresizingMaskIntoConstraints="NO" id="UfL-DY-mfZ">
+                    <rect key="frame" x="55" y="232" width="44" height="60"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_welcome_page3_5" translatesAutoresizingMaskIntoConstraints="NO" id="WAQ-xH-mol">
+                    <rect key="frame" x="31" y="166" width="44" height="59"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_welcome_page3_0" translatesAutoresizingMaskIntoConstraints="NO" id="wKt-2K-OH6">
+                    <rect key="frame" x="101" y="159" width="118" height="118"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="im_welcome_1" translatesAutoresizingMaskIntoConstraints="NO" id="ddk-Mg-2fc">
+                    <rect key="frame" x="48" y="60" width="224" height="29"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="wKt-2K-OH6" secondAttribute="centerX" id="7wm-t2-dMj"/>
+                <constraint firstItem="UfL-DY-mfZ" firstAttribute="top" secondItem="WAQ-xH-mol" secondAttribute="bottom" constant="7" id="G8a-p7-33k"/>
+                <constraint firstItem="wKt-2K-OH6" firstAttribute="leading" secondItem="UfL-DY-mfZ" secondAttribute="trailing" constant="2" id="M8M-1a-2M8"/>
+                <constraint firstItem="ddk-Mg-2fc" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="60" id="NR1-05-iHz"/>
+                <constraint firstItem="UfL-DY-mfZ" firstAttribute="leading" secondItem="WAQ-xH-mol" secondAttribute="trailing" constant="-20" id="WIo-qk-Yc7"/>
+                <constraint firstAttribute="centerX" secondItem="ddk-Mg-2fc" secondAttribute="centerX" id="ZBx-ey-C6R"/>
+                <constraint firstItem="wKt-2K-OH6" firstAttribute="top" secondItem="ddk-Mg-2fc" secondAttribute="bottom" constant="70" id="beM-oA-4Fi"/>
+                <constraint firstItem="Q4b-kZ-iXs" firstAttribute="top" secondItem="wKt-2K-OH6" secondAttribute="bottom" constant="-27" id="dup-4L-Yz8"/>
+                <constraint firstItem="wKt-2K-OH6" firstAttribute="leading" secondItem="6dP-E8-jq4" secondAttribute="trailing" constant="-21" id="e91-iF-px1"/>
+                <constraint firstItem="wKt-2K-OH6" firstAttribute="top" secondItem="6dP-E8-jq4" secondAttribute="bottom" constant="-12" id="eWU-bY-tRc"/>
+                <constraint firstItem="CO2-fc-nTu" firstAttribute="leading" secondItem="wKt-2K-OH6" secondAttribute="trailing" constant="-16" id="jQC-L8-VnW"/>
+                <constraint firstItem="wKt-2K-OH6" firstAttribute="top" secondItem="CO2-fc-nTu" secondAttribute="bottom" constant="-21" id="jig-IC-w4y"/>
+                <constraint firstItem="Q4b-kZ-iXs" firstAttribute="leading" secondItem="wKt-2K-OH6" secondAttribute="trailing" constant="-5" id="l7m-tk-KKO"/>
+                <constraint firstItem="roR-YE-hcA" firstAttribute="leading" secondItem="CO2-fc-nTu" secondAttribute="trailing" constant="-4" id="p3L-pr-W3y"/>
+                <constraint firstItem="roR-YE-hcA" firstAttribute="top" secondItem="CO2-fc-nTu" secondAttribute="bottom" constant="8" id="p9C-18-XwA"/>
+                <constraint firstItem="UfL-DY-mfZ" firstAttribute="top" secondItem="wKt-2K-OH6" secondAttribute="bottom" constant="-45" id="qnj-0X-wGi"/>
+            </constraints>
+            <connections>
+                <outlet property="bubble_0" destination="wKt-2K-OH6" id="OQE-ve-iml"/>
+                <outlet property="bubble_1" destination="CO2-fc-nTu" id="B7S-nV-hKj"/>
+                <outlet property="bubble_2" destination="roR-YE-hcA" id="oxq-tK-gbH"/>
+                <outlet property="bubble_3" destination="Q4b-kZ-iXs" id="9y0-UA-IZu"/>
+                <outlet property="bubble_4" destination="UfL-DY-mfZ" id="bsV-gL-5LK"/>
+                <outlet property="bubble_5" destination="WAQ-xH-mol" id="hS2-ce-7Z1"/>
+                <outlet property="bubble_6" destination="6dP-E8-jq4" id="dqs-by-h1z"/>
+            </connections>
+            <point key="canvasLocation" x="442" y="382"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_welcome_page3_0" width="118" height="118"/>
+        <image name="ic_welcome_page3_1" width="44" height="59"/>
+        <image name="ic_welcome_page3_2" width="44" height="60"/>
+        <image name="ic_welcome_page3_3" width="44" height="58"/>
+        <image name="ic_welcome_page3_4" width="44" height="60"/>
+        <image name="ic_welcome_page3_5" width="44" height="59"/>
+        <image name="ic_welcome_page3_6" width="44" height="58"/>
+        <image name="im_welcome_1" width="224" height="29"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
